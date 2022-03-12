@@ -1,6 +1,6 @@
 function sendMessage() {
     var request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/952148247785381948/k8wnHrzaK5wNc9yCPaMM6eqOwteHmuIymxrHHJAJWQMqhNiPicsbBuGYsejhIlkOaaGT");
+    request.open("POST", "https://ptb.discord.com/api/webhooks/952188871108603934/dQPsus28n58scTsf5NbCPIkeFTklxfgoD97DPUBQETdCdRU86RrHatD8RFNdfSg2gnWb");
     request.setRequestHeader('content-type', 'application/json'); 
 
     var aut = document.getElementById("name").value;
