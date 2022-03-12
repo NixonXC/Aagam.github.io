@@ -17,7 +17,7 @@ function sendMessage() {
     }
 
     var params = {
-    username: "Email test",
+    username: "Contact Manager",
     embeds: [ myEmbed ]
     }
 
