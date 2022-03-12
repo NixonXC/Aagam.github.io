@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab&display=swap');
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 350px;
+    margin-bottom: -70px;
+}
+.about p{
+    font-size: 35px;
+    font-style: normal;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.links h3 {
+    font-size: 35px;
+    display: inline-block;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+}
+.soc {
+    display: flex;
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+.soc img {
+    display: inline-block;
+    row-gap: 50px;
+}
+a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+#active {
+    color: rgb(0, 0, 0);
+}

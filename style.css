@@ -1,0 +1,97 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main p {
+    font-family: 'Roboto Slab';
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.links h3 {
+    font-size: 35px;
+    display: inline-block;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+}
+a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+#active {
+    color: rgb(0, 0, 0);
+}
+.soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+.soc img {
+    display: inline-block;
+    row-gap: 50px;
+}
+.pro1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro1 img {
+    display: inline-block;
+}.pro2 {
+    display: flex;
+    justify-content: center;
+}
+.pro2 img {
+    width: 500px;
+    display: inline-block;
+}
+.pro3 {
+    display: flex;
+    justify-content: center;
+}
+.pro3 img {
+    width: 500px;
+    display: inline-block;
+}
+.pro4 {
+    display: flex;
+    justify-content: center;
+}
+.pro4 img {
+    width: 500px;
+    display: inline-block;
+}
+.end {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 50px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: normal;
+}
+.end a {
+    color: rgb(85, 84, 84);
+}
+.end h1 {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
