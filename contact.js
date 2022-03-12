@@ -17,7 +17,7 @@ function sendMessage() {
     }
 
     var params = {
-    username: "Contact Manager",
+    username: "Message",
     embeds: [ myEmbed ]
     }
 
