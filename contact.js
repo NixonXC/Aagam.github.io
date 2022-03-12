@@ -1,1 +1,44 @@
-var _0x9e73=["\x50\x4F\x53\x54","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x70\x74\x62\x2E\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x77\x65\x62\x68\x6F\x6F\x6B\x73\x2F\x39\x35\x32\x31\x38\x38\x38\x37\x31\x31\x30\x38\x36\x30\x33\x39\x33\x34\x2F\x64\x51\x50\x73\x75\x73\x32\x38\x6E\x35\x38\x73\x63\x54\x73\x66\x35\x4E\x62\x43\x50\x49\x6B\x65\x46\x54\x6B\x6C\x78\x66\x67\x6F\x44\x39\x37\x44\x50\x55\x42\x51\x45\x54\x64\x43\x64\x52\x55\x38\x36\x52\x72\x48\x61\x74\x44\x38\x52\x46\x4E\x64\x66\x53\x67\x32\x67\x6E\x57\x62","\x6F\x70\x65\x6E","\x63\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72","\x76\x61\x6C\x75\x65","\x6E\x61\x6D\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x65\x6D\x61\x69\x6C","\x6D\x73\x67","\x23\x30\x30\x66\x66\x35\x31","\x4D\x65\x73\x73\x61\x67\x65","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x73\x65\x6E\x64","\x4D\x65\x73\x73\x61\x67\x65\x20\x73\x65\x6E\x74\x21\x20","\x61\x6C\x65\x72\x74","\x72\x65\x6C\x6F\x61\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x23","","\x72\x65\x70\x6C\x61\x63\x65"];function sendMessage(){var _0x2a49x2= new XMLHttpRequest();_0x2a49x2[_0x9e73[2]](_0x9e73[0],_0x9e73[1]);_0x2a49x2[_0x9e73[5]](_0x9e73[3],_0x9e73[4]);var _0x2a49x3=document[_0x9e73[8]](_0x9e73[7])[_0x9e73[6]];var _0x2a49x4=document[_0x9e73[8]](_0x9e73[9])[_0x9e73[6]];var _0x2a49x5=document[_0x9e73[8]](_0x9e73[10])[_0x9e73[6]];var _0x2a49x6={author:{name:_0x2a49x4},title:_0x2a49x3,description:_0x2a49x5,color:_0x2a49x8(_0x9e73[11])};var _0x2a49x7={username:_0x9e73[12],embeds:[_0x2a49x6]};_0x2a49x2[_0x9e73[14]](JSON[_0x9e73[13]](_0x2a49x7));window[_0x9e73[16]](_0x9e73[15]+ _0x2a49x3);window[_0x9e73[18]][_0x9e73[17]]();function _0x2a49x8(_0x2a49x9){return parseInt(_0x2a49x9[_0x9e73[21]](_0x9e73[19],_0x9e73[20]),16)}}
+function sendMessage() {
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://ptb.discord.com/api/webhooks/952188871108603934/dQPsus28n58scTsf5NbCPIkeFTklxfgoD97DPUBQETdCdRU86RrHatD8RFNdfSg2gnWb");
+    request.setRequestHeader('content-type', 'application/json'); 
+
+    var aut = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var msg = document.getElementById("msg").value;
+
+    var myEmbed = {
+    author: {
+        name: email
+    },
+    title: aut,
+    description: msg,
+    color: hexToDecimal("#00ff51")
+    }
+
+    var params = {
+    username: "Message",
+    embeds: [ myEmbed ]
+    }
+
+    request.send(JSON.stringify(params));
+    window.alert("Message sent! " + aut);
+    window.location.reload();
+
+    function hexToDecimal(hex) {
+        return parseInt(hex.replace("#",""), 16)
+    }
+}
+document.getElementById("insta").onclick = function () {
+    window.location.href = "https://www.instagram.com/aagam0/";
+};
+document.getElementById("ast").onclick = function () {
+    window.location.href = "mailto:0aagamj@gmail.com";
+};
+document.getElementById("in").onclick = function () {
+    window.location.href = "https://www.linkedin.com/in/aagam-jain-4b8473222/";
+};
+document.getElementById("beh").onclick = function () {
+    window.location.href = "https://www.behance.net/aagam0";
+}
+console.log("Hello World!")
