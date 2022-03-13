@@ -27,18 +27,22 @@
         </div>
         <div class="con">
             <label>
-                <input id="name" type="text" name="name" placeholder="Your Name">
+                <input id="name" type="text" name="name" placeholder="Your Name" minlength="1">
               </label>
               
               <label>
-                <input id="email" type="email" name="email" placeholder="Your Email Address">
+                <input id="email" type="email" name="email" placeholder="Your Email Address" minlength="3">
               </label>
               
               <label>
-                <textarea id="msg" name="message" placeholder="Message"></textarea>
+                <textarea id="msg" name="message" placeholder="Message" maxlength="800"></textarea>
               </label>
         </div>
         <button class="sum" onclick="sendMessage()">Sumbit</button>
+        <div class="nav">
+            <a href="index.html">Protfolio</a>
+            <a href="about.html">About</a>
+        </div>
     <script src="contact.js"></script>
 </body>
 </html>
