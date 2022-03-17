@@ -1,1 +1,44 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 o(){3 b=p q();b.r("s","6://t.u.7/v/w/x/y");b.z(\'A-B\',\'C/D\');3 c=0.1("j").h;3 d=0.1("E").h;3 e=0.1("F").h;3 f={G:{j:d},H:c,I:e,J:k("#K")}3 g={L:"l",M:[f]}b.N(O.P(g));4.Q("l R! "+c);4.5.S();2 k(a){T U(a.V("#",""),16)}}0.1("W").8=2(){4.5.9="6://i.X.7/m/"};0.1("Y").8=2(){4.5.9="Z:10@11.7"};0.1("n").8=2(){4.5.9="6://i.12.7/n/13-14-15/"};0.1("17").8=2(){4.5.9="6://i.18.19/m"}1a.1b("1c 1d!")',62,76,'document|getElementById|function|var|window|location|https|com|onclick|href||||||||value|www|name|hexToDecimal|Message|aagam0|in|sendMessage|new|XMLHttpRequest|open|POST|ptb|discord|api|webhooks|952188871108603934|dQPsus28n58scTsf5NbCPIkeFTklxfgoD97DPUBQETdCdRU86RrHatD8RFNdfSg2gnWb|setRequestHeader|content|type|application|json|email|msg|author|title|description|color|00ff51|username|embeds|send|JSON|stringify|alert|sent|reload|return|parseInt|replace|insta|instagram|ast|mailto|0aagamj|gmail|linkedin|aagam|jain|4b8473222||beh|behance|net|console|log|Hello|World'.split('|'),0,{}))
+function sendMessage() {
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://ptb.discord.com/api/webhooks/952188871108603934/dQPsus28n58scTsf5NbCPIkeFTklxfgoD97DPUBQETdCdRU86RrHatD8RFNdfSg2gnWb");
+    request.setRequestHeader('content-type', 'application/json'); 
+
+    var aut = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var msg = document.getElementById("msg").value;
+
+    var myEmbed = {
+    author: {
+        name: email
+    },
+    title: aut,
+    description: msg,
+    color: hexToDecimal("#00ff51")
+    }
+
+    var params = {
+    username: "Message",
+    embeds: [ myEmbed ]
+    }
+
+    request.send(JSON.stringify(params));
+    window.alert("Message sent! " + aut);
+    window.location.reload();
+
+    function hexToDecimal(hex) {
+        return parseInt(hex.replace("#",""), 16)
+    }
+}
+document.getElementById("insta").onclick = function () {
+    window.location.href = "https://www.instagram.com/aagam0/";
+};
+document.getElementById("ast").onclick = function () {
+    window.location.href = "mailto:0aagamj@gmail.com";
+};
+document.getElementById("in").onclick = function () {
+    window.location.href = "https://www.linkedin.com/in/aagam-jain-4b8473222/";
+};
+document.getElementById("beh").onclick = function () {
+    window.location.href = "https://www.behance.net/aagam0";
+}
+console.log("Hello World!")

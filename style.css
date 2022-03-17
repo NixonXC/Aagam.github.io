@@ -55,11 +55,13 @@ a {
 .pro1 img {
     display: inline-block;
 }.pro2 {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 .pro2 img {
     width: 500px;
+    border-radius: 4px;
     display: inline-block;
 }
 .pro3 {
@@ -76,6 +78,7 @@ a {
 }
 .pro4 img {
     width: 500px;
+    border-radius: 4px;
     display: inline-block;
 }
 .end {
@@ -105,16 +108,13 @@ a {
     display: none;
 }
 @media only screen and (max-width: 600px) {
-    .pro1 {
-        display: grid;
-        row-gap: 8px;
-    }
     .pro2 {
         display: grid;
         row-gap: 8px;
     }
     .pro3 {
-        display: none;
+        display: grid;
+        row-gap: 8px;
     }
     .pro4 {
         display: none;
